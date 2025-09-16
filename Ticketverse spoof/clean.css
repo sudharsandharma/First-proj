@@ -1,0 +1,105 @@
+/* --- General Page Styling --- */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* A container for the main content to keep it centered and readable */
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto; /* Top/bottom margin of 2rem, auto for left/right to center it */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  border-radius: 8px; /* Slightly rounded corners */
+}
+
+h1, h2 {
+  color: #4a4a4a;
+  text-align: center;
+}
+
+p {
+  line-height: 1.8;
+}
+
+/* --- Header & Navigation Styling --- */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex; /* Makes the nav items a flex container */
+  justify-content: center; /* Centers the items horizontally */
+  gap: 2rem; /* Adds space between each link */
+}
+
+/* Styles the individual links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Adds a smooth color change on hover */
+}
+
+/* Adds a hover effect to the links */
+nav a:hover {
+  background-color: #575757;
+}
+
+/* --- Form Styling (for login and contact pages) --- */
+.login-form, .contact-form {
+  display: flex;
+  flex-direction: column; /* Stacks the form items vertically */
+  gap: 1rem;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.login-form label, .contact-form label {
+  font-weight: bold;
+}
+
+.login-form input,
+.login-form button,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect the element's total width */
+}
+
+.login-form button, .contact-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover, .contact-form button:hover {
+  background-color: #575757;
+}
+
+/* --- Footer Styling --- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  position: fixed; /* Positions the footer at the bottom of the viewport */
+  bottom: 0;
+  width: 100%;
+}
